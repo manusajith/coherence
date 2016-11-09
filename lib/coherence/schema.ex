@@ -158,7 +158,7 @@ defmodule Coherence.Schema do
 
         Adds the `:confirmed_at` datetime field on the user model.
 
-        deprecated! Please use Coherence.ControllerHelpers.unlock!/1.
+        deprecated! Please use Coherence.ControllerHelpers.confirm!/1.
         """
         def confirm!(user) do
           IO.warn "#{inspect Config.user_schema}.confirm!/1 has been deprecated. Please use Coherence.ControllerHelpers.confirm!/1 instead."
